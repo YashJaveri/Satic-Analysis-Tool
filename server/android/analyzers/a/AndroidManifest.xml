@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.bankeen" platformBuildVersionCode="31106405" platformBuildVersionName="3.11.6">
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="false" android:allowClearUserData="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.bankeen.BankeenApp" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/Theme.Default">
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.bankeen.NotificationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="notification_cancelled"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.bankeen.BankinFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <receiver android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.bankeen.common.activities.core.LauncherActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:host="accounts" android:scheme="bankin"/>
+                <data android:host="balance" android:scheme="bankin"/>
+                <data android:host="balancealerts" android:scheme="bankin"/>
+                <data android:host="banks" android:scheme="bankin"/>
+                <data android:host="bplus" android:scheme="bankin"/>
+                <data android:host="bpro" android:scheme="bankin"/>
+                <data android:host="budgets" android:scheme="bankin"/>
+                <data android:host="categories" android:scheme="bankin"/>
+                <data android:host="export" android:scheme="bankin"/>
+                <data android:host="feed" android:scheme="bankin"/>
+                <data android:host="intercom" android:scheme="bankin"/>
+                <data android:host="livechat" android:scheme="bankin"/>
+                <data android:host="menu" android:scheme="bankin"/>
+                <data android:host="opportunities" android:scheme="bankin"/>
+                <data android:host="pincode" android:scheme="bankin"/>
+                <data android:host="profile" android:scheme="bankin"/>
+                <data android:host="search" android:scheme="bankin"/>
+                <data android:host="settings" android:scheme="bankin"/>
+                <data android:host="sponsorship" android:scheme="bankin"/>
+                <data android:host="support" android:scheme="bankin"/>
+                <data android:host="themes" android:scheme="bankin"/>
+                <data android:host="transactionalerts" android:scheme="bankin"/>
+                <data android:host="more" android:scheme="bankin"/>
+                <data android:host="webview" android:scheme="bankin"/>
+                <data android:host="transfers" android:scheme="bankin"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="api.bankin.com" android:pathPrefix="/goBankin" android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.bankeen.common.activities.core.LauncherActivity_" android:targetActivity="com.bankeen.common.activities.core.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity-alias>
+        <activity android:exported="false" android:name="com.bankeen.common.CloseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.bankeen.common.activities.core.BankinMainConnectedActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bankeen.common.activities.LaunchActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.addbankaccount.AddBankAccountActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bankeen.ui.addingbankaccount.AddingBankAccountActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.banklist.BankListActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bankeen.ui.firstscreen.FirstScreenActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.home.email.EmailActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.home.connection.ConnectionActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.home.createaccount.CreateAccountActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.bankaccount.PreferenceBankAccountListActivity" android:parentActivityName="com.bankeen.ui.preference.SettingsActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferenceemail.PreferenceEmailActivity" android:parentActivityName="com.bankeen.ui.preferenceaccount.PreferenceAccountActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferencepassword.PreferencePasswordActivity" android:parentActivityName="com.bankeen.ui.preferenceaccount.PreferenceAccountActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.alerts.balance.AlertBalanceActivity" android:parentActivityName="com.bankeen.ui.preferences.alerts.PreferenceNotificationActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.alerts.transaction.AlertTransactionActivity" android:parentActivityName="com.bankeen.ui.preferences.alerts.PreferenceNotificationActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.alerts.balance.add.AddAlertBalanceActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferenceaccount.PreferenceAccountActivity" android:parentActivityName="com.bankeen.ui.preference.SettingsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.bankaccount.PreferenceEditAccountsActivity" android:parentActivityName="com.bankeen.ui.preferences.bankaccount.PreferenceBankAccountListActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.bankaccount.PreferenceEditAccountTypeActivity" android:parentActivityName="com.bankeen.ui.preferences.bankaccount.PreferenceEditAccountsActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferencepincode.PreferencePincodeActivity" android:parentActivityName="com.bankeen.ui.preference.SettingsActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transactiondetail.TransactionDetailActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity" android:theme="@style/BankinDetailTransactionActivityDialog"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.savingaccount.SavingAccountActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.sharesavingaccount.ShareSavingAccountActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.creditaccount.CreditAccountActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.sharesavingaccountdetail.ShareSavingAccountDetailActivity" android:parentActivityName="com.bankeen.ui.sharesavingaccount.ShareSavingAccountActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferencefunctionality.PreferenceFunctionalityActivity" android:parentActivityName="com.bankeen.ui.preference.SettingsActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.alerts.PreferenceNotificationActivity" android:parentActivityName="com.bankeen.ui.preference.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.alerts.daily.PreferenceDailyNotificationActivity" android:parentActivityName="com.bankeen.ui.preferences.alerts.PreferenceNotificationActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.currency.CurrencyActivity" android:parentActivityName="com.bankeen.ui.preference.SettingsActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.currency.CurrencyListActivity" android:parentActivityName="com.bankeen.ui.preferences.currency.CurrencyActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.categorydetail.CategoryDetailActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.category.CategorizeActivity" android:parentActivityName="com.bankeen.ui.transactiondetail.TransactionDetailActivity" android:theme="@style/BankinActivityDialogSecond" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.selection.SelectionAccountActivity" android:parentActivityName="com.bankeen.balance.BalanceActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.budgets.BudgetAccountSelectionActivity" android:parentActivityName="com.bankeen.ui.budgets.BudgetSettingsActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.budgets.BudgetEstimateLimitActivity" android:parentActivityName="com.bankeen.ui.budgets.BudgetAccountSelectionActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.budgets.BudgetSelectCategoryActivity" android:parentActivityName="com.bankeen.ui.budgets.BudgetSettingsActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.budgets.BudgetSettingsActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.search.SearchActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preferences.alerts.balance.selectaccount.SelectAccountActivity" android:parentActivityName="com.bankeen.ui.preferences.alerts.balance.add.AddAlertBalanceActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.home.CGUActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.banks.WebviewBankActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.banks.InfoRequiredDialogActivity" android:theme="@style/BankinOtpDialog" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.ratedialog.RateDialogActivity" android:theme="@style/Theme.ShareDialog"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.start.SyncDialogActivity" android:theme="@style/Theme.ShareDialog"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transferamount.TransferAmountActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.account.receiver.TransferReceiverAccountActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.account.sender.TransferSenderAccountActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.TransferPasswordActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.TransferListActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.TransferDetailActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.TransferNotAvailableActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.DiscoverActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.InfoPincodeActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.SyntheseActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.bankeen.ui.transfer.TransferDoneActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.TransferNotificationActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transfer.TransferLabelActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.home.ConfirmCreationActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bankeen.ui.feed.BkWebViewActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.deleteaccount.DeleteFirstActivity" android:parentActivityName="com.bankeen.ui.preferenceaccount.PreferenceAccountActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.deleteaccount.DeleteReasonActivity" android:parentActivityName="com.bankeen.ui.deleteaccount.DeleteFirstActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.deleteaccount.DeleteConfirmActivity" android:parentActivityName="com.bankeen.ui.deleteaccount.DeleteReasonActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.deleteaccount.DeletePasswordActivity" android:parentActivityName="com.bankeen.ui.deleteaccount.DeleteConfirmActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bankeen.billing.PlanActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.qa.QaActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.coachaction.CoachActionActivity" android:parentActivityName="com.bankeen.ui.coach.coachtheme.CoachThemeActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.chat.CoachChatOrSupportActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.export.ExportActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.preference.SettingsActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.balance.BalanceActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.sponsorship.SponsorshipActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.subscription.SubscriptionActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.coachtheme.CoachThemeActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.opportunity.OpportunityPresentationActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.opportunity.OpportunityListActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.opportunity.OpportunityContentActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.opportunity.OpportunityQuestionActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mixpanel.android.takeoverinapp.TakeoverInAppActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity" android:theme="@style/com_mixpanel_android_TakeoverInAppActivityTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.bankeen.ui.pincode.PincodeActivity" android:noHistory="true" android:parentActivityName="com.bankeen.ui.preferencepincode.PreferencePincodeActivity" android:theme="@style/theme_pincode"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.recurringtransaction.RecurringTransactionActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.explanation.ExplanationActivity" android:parentActivityName="com.bankeen.ui.coach.coachaction.CoachActionActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.transactionlist.TransactionListActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.intercom.IntercomActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.ui.coach.opportunity.OpportunityDeepLinkActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <activity android:exported="false" android:name="com.bankeen.tools.notifications.BkDeepLinkActivity" android:parentActivityName="com.bankeen.common.activities.core.BankinMainConnectedActivity"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/FB_APP_ID"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.mixpanel.android.MPConfig.DisableAppOpenEvent" android:value="true"/>
+        <meta-data android:name="com.mixpanel.android.MPConfig.AutoShowMixpanelUpdates" android:value="false"/>
+        <meta-data android:name="com.mixpanel.android.MPConfig.DisableViewCrawler" android:value="true"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="046bf7d9b8279dabb1e1327384e5c35750830e5c"/>
+        <provider android:authorities="com.bankeen.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:name="io.intercom.android.sdk.fcm.IntercomFcmMessengerService">
+            <intent-filter android:priority="-400">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomMessengerActivity" android:theme="@style/Intercom_PanelTheme" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="io.intercom.android.sdk.lightbox.LightBoxActivity" android:theme="@style/Intercom_LightBoxTheme" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomArticleActivity" android:theme="@style/Intercom_ModalActivityTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomHelpCenterActivity" android:theme="@style/Intercom_ModalActivityTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="io.intercom.android.sdk.activities.IntercomPostActivity" android:theme="@style/Intercom_PostTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="io.intercom.android.sdk.activities.IntercomNoteActivity" android:theme="@style/Intercom_NoteTheme" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomSheetActivity" android:theme="@style/Intercom_ModalActivityTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomVideoActivity" android:theme="@style/Intercom_PanelTheme" android:windowSoftInputMode="stateHidden"/>
+        <receiver android:exported="false" android:name="io.intercom.android.sdk.push.IntercomPushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="io.intercom.android.sdk.INTERCOM_PUSH_OPENED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.bankeen.IntercomInitializeContentProvider" android:exported="false" android:name="io.intercom.android.sdk.IntercomInitializeContentProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.bankeen.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.component.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:exported="false" android:name="com.evernote.android.job.v21.PlatformJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"/>
+        <receiver android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.v14.RUN_JOB"/>
+                <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.evernote.android.job.JobBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="true" android:name="com.evernote.android.job.gcm.PlatformGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.evernote.android.job.JobRescheduleService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.bankeen.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity"/>
+        <activity android:exported="true" android:name="com.google.android.gms.appinvite.PreviewActivity" android:theme="@style/Theme.AppInvite.Preview">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.bankeen.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.bankeen.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.intercom.input.gallery.GalleryInputFullScreenActivity" android:theme="@style/intercom_composer_full_screen_theme"/>
+        <activity android:configChanges="density|orientation|screenLayout|screenSize" android:name="com.intercom.input.gallery.GalleryLightBoxActivity" android:theme="@style/intercom_composer_full_screen_theme"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="14"/>
+    </application>
+</manifest>

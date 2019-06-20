@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rate_dialog_content" android:layout_width="250.0dip" android:layout_height="270.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/rate_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/rate_dialog_title" android:background="@drawable/rate_dialog_title" android:layout_width="fill_parent" android:layout_height="70.0dip" android:text="@string/rate_do_you_like_bankin" />
+            <LinearLayout android:orientation="vertical" android:id="@id/rate_dialog_yes" android:background="@drawable/clic_view" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/rate_dialog_yes_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/rate_yes" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/charcoalGrey" android:layout_gravity="center" android:id="@id/rate_dialog_yes_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/rate_yes_description" />
+            </LinearLayout>
+            <View android:background="@color/lightBlueGrey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/rate_dialog_no" android:background="@drawable/clic_view_radius6" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/rate_dialog_no_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/rate_no" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/charcoalGrey" android:layout_gravity="center" android:id="@id/rate_dialog_no_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/rate_no_description" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rate_yes_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="137.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/rate_yes" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/charcoalGrey" android:gravity="center_horizontal" android:id="@id/rate_thank_you" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/rate_thank_you" />
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/rate_play_store" android:background="@drawable/ripple_rate_button" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/rate_play_store" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/rate_dialog_exit" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/rate_dialog_exit_cross" android:background="@drawable/closing_circle" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="@string/icon_close" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:paddingLeft="16.0dip" android:paddingTop="32.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_icon" android:textColor="#ffffcc38" android:id="@id/coach_themes_header_score" android:paddingTop="@dimen/coach_themes_header_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_icon_cup" android:layout_marginEnd="10.0dip" app:layout_constraintEnd_toStartOf="@id/coach_themes_header_score_content" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/coach_themes_header_score_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/coach_themes_header_remaining" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toEndOf="@id/coach_themes_header_score" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_score_value_1_current" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_score_value_1_next" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_score_value_2_current" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_score_value_2_next" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_score_value_3_current" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_score_value_3_next" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_percent" android:textColor="#ff00213c" android:layout_gravity="bottom" android:id="@id/coach_themes_header_score_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coach_themes_header_percentage" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_label" android:textColor="#ff00213c" android:id="@id/coach_themes_header_score_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coach_themes_header_score" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_icon" android:textColor="#ffff6f93" android:id="@id/coach_themes_header_remaining" android:paddingTop="@dimen/coach_themes_header_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_icon_target" android:layout_marginStart="40.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintEnd_toStartOf="@id/coach_themes_header_remaining_content" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toEndOf="@id/coach_themes_header_score_content" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/coach_themes_header_remaining_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toEndOf="@id/coach_themes_header_remaining" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_remaining_value_1_current" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_remaining_value_1_next" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_remaining_value_2_current" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_remaining_value_2_next" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_remaining_value_3_current" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+                <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_figure" android:textColor="#ff00213c" android:id="@id/coach_themes_header_remaining_value_3_next" android:layout_width="wrap_content" android:layout_height="@dimen/coach_themes_header_figure_height" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/coach_actions_themes_font_size_header_label" android:textColor="#ff00213c" android:id="@id/coach_themes_header_remaining_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

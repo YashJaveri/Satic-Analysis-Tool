@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ffebeced" />
+            <padding android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="1.0px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#ffe8e9ea" />
+            <padding android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="1.0px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#ffe5e6e7" />
+            <padding android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="1.0px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#ffe1e2e3" />
+            <padding android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="1.0px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#ffdedfe0" />
+            <padding android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="1.0px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#ffd8d9da" />
+            <padding android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="1.0px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

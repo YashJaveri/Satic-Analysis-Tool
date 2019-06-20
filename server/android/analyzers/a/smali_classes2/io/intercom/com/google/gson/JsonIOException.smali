@@ -1,0 +1,23 @@
+.class public final Lio/intercom/com/google/gson/JsonIOException;
+.super Lio/intercom/com/google/gson/JsonParseException;
+.source "JsonIOException.java"
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 29
+    invoke-direct {p0, p1}, Lio/intercom/com/google/gson/JsonParseException;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 0
+
+    .line 43
+    invoke-direct {p0, p1}, Lio/intercom/com/google/gson/JsonParseException;-><init>(Ljava/lang/Throwable;)V
+
+    return-void
+.end method

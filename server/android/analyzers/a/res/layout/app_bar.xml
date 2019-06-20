@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout style="@style/Bankin.Widget.AppBar">
+    <include layout="@layout/toolbar" />
+</android.support.design.widget.AppBarLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/globalContent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/app_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/security_footer" android:background="#fff5f7f9" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="18.0dip" android:src="@drawable/add_account_secure" android:contentDescription="@string/add_account_security" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/greyBlue" android:id="@id/add_account_security" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:text="@string/add_account_security" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/lightblue_click" android:id="@id/add_account_know_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_account_know_more" />
+        </LinearLayout>
+        <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/security_footer" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff1e74ac" android:gravity="center" android:id="@id/add_lock_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/icon_lock" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/add_account_switch_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="15.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/charcoalGrey" android:gravity="start" android:layout_gravity="center" android:id="@id/add_account_switch_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="500.0dip" android:layout_weight="1.0" android:layout_marginEnd="15.0dip" />
+                    <android.support.v7.widget.SwitchCompat android:id="@id/add_account_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/add_account_field_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/add_account_form" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="16.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:layout_gravity="center" android:id="@id/add_account_field" android:background="@drawable/edittext_bg" android:paddingLeft="@dimen/list_custom_cat_padding" android:paddingRight="@dimen/list_custom_cat_padding" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:singleLine="true" android:inputType="textVisiblePassword" android:imeOptions="flagNoExtractUi" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:gravity="center" android:id="@id/add_account_field_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/add_account_same_credentials" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/add_account_steps" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="145.0dip" android:layout_marginTop="25.0dip">
+                    <ImageView android:id="@id/sponsorship_gift" android:layout_width="wrap_content" android:layout_height="130.0dip" android:src="@drawable/sponsorship_gift" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/sponsorship_title" />
+                </RelativeLayout>
+                <TextView android:textSize="18.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/sponsorship_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/sponsorship_title" android:textAllCaps="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/sponsorship_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sponsorship_subtitle" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/blueGrey" android:gravity="center" android:id="@id/sponsorship_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/sponsorship_link" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/standard_text_size" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/sponsorship_invitation_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/sponsorship_invitation_code" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/sponsorship_code_bg" android:layout_width="wrap_content" android:layout_height="45.0dip">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/sponsorship_code_container" android:clickable="true" android:layout_width="130.0dip" android:layout_height="45.0dip">
+                        <TextView android:textSize="22.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:layout_gravity="center" android:id="@id/sponsorship_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:textAllCaps="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sponsorship_copy" android:background="@drawable/sponsorship_copy" android:layout_width="wrap_content" android:layout_height="37.0dip" android:layout_marginTop="4.0dip" android:text="@string/sponsorship_copy" android:textAllCaps="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginEnd="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/sponsorship_app_invite" android:background="@drawable/sponsorship_app_invite" android:layout_width="54.0dip" android:layout_height="44.0dip" android:layout_marginStart="10.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/ic_file_upload_white_36dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/standard_text_size" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/sponsorship_send_invitation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/sponsorship_send_invitation" />
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="20.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/sponsorship_facebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dip">
+                    <ImageView android:background="@drawable/sponsorship_facebook" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ripple_white" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:layout_gravity="center" android:id="@id/sponsorship_facebook_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/sponsorship_facebook" android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/sponsorship_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dip" android:layout_toEndOf="@id/sponsorship_facebook">
+                    <ImageView android:background="@drawable/sponsorship_message" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ripple_white" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:layout_gravity="center" android:id="@id/sponsorship_message_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/sponsorship_message" android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/sponsorship_twitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/sponsorship_message">
+                    <ImageView android:background="@drawable/sponsorship_twitter" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ripple_white" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:layout_gravity="center" android:id="@id/sponsorship_twitter_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/sponsorship_twitter" android:textAllCaps="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

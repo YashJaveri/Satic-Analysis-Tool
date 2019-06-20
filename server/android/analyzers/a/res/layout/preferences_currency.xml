@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/globalContent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/app_bar" />
+    <ScrollView android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <TextView android:textSize="10.0sp" android:textColor="@color/gunMetal" android:id="@id/default_currency_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="@dimen/list_padding_side_three_quarter" android:layout_marginRight="@dimen/list_padding_side_half" android:layout_marginBottom="@dimen/list_padding_side_three_quarter" android:text="@string/bk_settings_currencies_default_currency_title" android:textAllCaps="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/default_currency_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginRight="@dimen/list_padding_side_half" android:layout_marginBottom="2.0dip">
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/clic_view_radius" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/list_item" />
+                </LinearLayout>
+                <View android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:id="@id/default_currency_subtitle_activated" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:text="" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:id="@id/default_currency_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:text="@string/bk_settings_currencies_conversion_footer" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="@color/gunMetal" android:id="@id/convert_amount_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="@dimen/list_padding_side_three_quarter" android:layout_marginRight="@dimen/list_padding_side_half" android:layout_marginBottom="@dimen/list_padding_side_three_quarter" android:text="@string/bk_settings_currencies_conversion_header" android:textAllCaps="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/convert_amount_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginRight="@dimen/list_padding_side_half" android:layout_marginBottom="2.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:background="@drawable/clic_view_radius" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/list_item" />
+                    </LinearLayout>
+                    <View android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:id="@id/convert_amount_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:text="@string/bk_settings_currencies_default_currency_footer" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/edit_local_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginRight="@dimen/list_padding_side_half" android:layout_marginBottom="2.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:background="@drawable/clic_view_radius" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/list_item" />
+                    </LinearLayout>
+                    <View android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:id="@id/edit_local_subtitle" android:paddingBottom="@dimen/list_padding_side_three_quarter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:text="@string/bk_settings_currencies_region_format_example_title" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/blueGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/currency_example_title" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/blueGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/currency_example_positive_title" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/blueGrey" android:id="@id/example_currency_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/blueGrey" android:id="@id/example_currency_positive_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/blueGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/currency_example_negative_title" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/blueGrey" android:id="@id/example_currency_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/blueGrey" android:id="@id/example_currency_negative_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

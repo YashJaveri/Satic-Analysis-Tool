@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/list_header_container" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/account_list_header" />
+    <View android:id="@id/line_account_top" android:background="@color/paleGreyPlus" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <include android:id="@id/list_item_container" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/list_header_container" layout="@layout/account_list_amount" />
+    <include android:id="@id/account_list_item_forecast" android:visibility="gone" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/list_item_container" layout="@layout/account_list_forecast" />
+</LinearLayout>

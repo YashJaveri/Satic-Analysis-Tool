@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="35.0sp" android:textColor="@color/lightBlue" android:id="@id/home_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/logo_full_icon" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/home_container" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="40.0dip" android:layout_below="@id/home_logo" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/home_phone" android:layout_centerInParent="true" />
+                <com.bankeen.tools.ui.MutedVideoView android:id="@id/home_video" android:layout_width="138.0dip" android:layout_height="142.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/home_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/home_title" android:layout_below="@id/home_container" android:layout_centerInParent="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/greyBlue" android:gravity="center" android:id="@id/home_desc_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/home_desc_1" android:layout_below="@id/home_tag" android:layout_centerInParent="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/greyBlue" android:gravity="center" android:id="@id/home_desc_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_desc_2" android:layout_below="@id/home_desc_1" android:layout_centerInParent="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/greyBlue" android:gravity="center" android:id="@id/home_desc_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_desc_3" android:layout_below="@id/home_desc_2" android:layout_centerInParent="true" />
+            <View android:layout_width="1.0dip" android:layout_height="70.0dip" android:layout_below="@id/home_desc_3" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/connect" android:background="@drawable/ripple_dark_mint" android:layout_width="fill_parent" android:layout_height="70.0dip" android:text="@string/connect_home" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:textAllCaps="true" style="@style/text_main_description" />
+</RelativeLayout>

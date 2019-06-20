@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_dialog_root" android:background="@color/white" android:padding="@dimen/list_padding_side" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_discover_friends_counter" style="@style/text_dialog.title" />
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dialog_offer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin_top_settings_big_double" android:layout_marginBottom="@dimen/common_margin_top_settings_big_double" android:text="@string/share_sponsorship_bplus" style="@style/text_dialog.description" />
+    <include layout="@layout/dialog_btn" />
+</LinearLayout>

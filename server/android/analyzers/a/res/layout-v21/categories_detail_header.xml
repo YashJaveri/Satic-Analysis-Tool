@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/category_detail_header" android:layout_width="120.0dip" android:layout_height="120.0dip" android:transitionName="@string/transition_budget_chart"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.mikephil.charting.charts.PieChart android:id="@id/category_detail_header_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/category_detail_header_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+        <TextView android:textColor="@color/gunMetal" android:gravity="center" android:id="@id/category_detail_header_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/solde" style="@style/list_item_title" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:gravity="center" android:id="@id/category_detail_header_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

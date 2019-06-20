@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/feed_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_feed" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/feed_card_list" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.constraint.ConstraintLayout android:id="@id/feed_empty_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/feed_empty_content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <include android:id="@id/btn_coach_action_and_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" layout="@layout/btn_coach_chat" />
+            <TextView android:textSize="28.0sp" android:id="@id/feed_empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/feed_empty_title" android:textAlignment="center" />
+            <TextView android:textSize="20.0sp" android:id="@id/feed_empty_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/feed_empty_subtitle" android:textAlignment="center" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bankeen.ui.feed.FeedPulsingButton android:id="@id/btn_coach_chat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:badgeColor="@drawable/coach_chat_badge_bg" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:pluralText="@plurals/coach_messages_to_read" app:pulsingColor="@drawable/coach_chat_badge_ripple" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/coach_theme_container" android:background="@drawable/clic_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/coach_theme_icon" android:background="@drawable/coach_theme_icon_bg" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="12.0dip" app:layout_constraintEnd_toStartOf="@id/coach_theme_text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/coach_actions_themes_font_size_icon" android:gravity="center" android:id="@id/coach_theme_icon_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/action_icon_validate" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/coach_theme_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/coach_theme_icon" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/coach_actions_themes_font_size_title" android:textColor="#ff00213c" android:ellipsize="end" android:id="@id/coach_theme_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="15.0dip" />
+        <TextView android:textSize="@dimen/coach_actions_themes_font_size_subtitle" android:textColor="#ff5a6a85" android:ellipsize="end" android:id="@id/coach_theme_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="15.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="18.0dip" android:layout_marginEnd="15.0dip">
+            <android.support.constraint.ConstraintLayout android:background="@drawable/coach_theme_bar_bg" android:layout_width="0.0dip" android:layout_height="10.0dip" android:layout_weight="1.0" android:layout_marginEnd="12.0dip">
+                <View android:id="@id/coach_theme_bar" android:background="@drawable/coach_theme_bar" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/coach_theme_guideline" app:layout_constraintStart_toStartOf="parent" />
+                <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/coach_theme_guideline" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintGuide_percent="0.0" />
+            </android.support.constraint.ConstraintLayout>
+            <TextView android:textSize="@dimen/coach_actions_themes_font_size_count" android:textColor="#ff00213c" android:id="@id/coach_theme_completed_actions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="3.0dip" app:layout_constraintEnd_toStartOf="@id/coach_theme_total_actions" />
+            <TextView android:textSize="@dimen/coach_actions_themes_font_size_count" android:textColor="#ffafbed2" android:id="@id/coach_theme_total_actions" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/coach_theme_completed_actions" />
+        </LinearLayout>
+        <View android:id="@id/coach_theme_bottom_line" android:background="#ffeef3f9" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

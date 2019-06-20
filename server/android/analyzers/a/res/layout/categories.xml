@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_categories" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.bankeen.data.headerdate.HeaderDateView android:id="@id/headerDateView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/category_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <android.support.percent.PercentRelativeLayout android:id="@id/category_chart_line" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/header_nav_custom" />
+</RelativeLayout>

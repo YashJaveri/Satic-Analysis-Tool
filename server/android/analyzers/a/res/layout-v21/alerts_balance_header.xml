@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/alerts_balance_header" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="@dimen/list_padding_side" android:layout_marginRight="@dimen/list_padding_side_half" android:layout_marginBottom="2.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/alerts_balance_mail_container" android:background="@drawable/clic_view_radius" android:paddingLeft="@dimen/list_padding_side_three_quarter" android:paddingRight="@dimen/list_padding_side_three_quarter" android:layout_width="fill_parent" android:layout_height="42.0dip" android:paddingStart="@dimen/list_padding_side_three_quarter" android:paddingEnd="@dimen/list_padding_side_three_quarter">
+            <ProgressBar android:layout_gravity="center" android:id="@id/alerts_balance_mail_loader" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:layout_marginEnd="@dimen/list_padding_side_half" android:indeterminateTint="@color/bankin" android:indeterminateTintMode="src_in" />
+            <TextView android:textColor="@color/charcoalGrey" android:gravity="start|center" android:id="@id/alerts_balance_mail_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/pref_alerts_mail_label" android:layout_weight="1.0" style="@style/standard_text_size" />
+            <android.support.v7.widget.SwitchCompat android:layout_gravity="end|center" android:id="@id/alerts_balance_mail_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_quarter" android:layout_marginStart="@dimen/list_padding_side_quarter" />
+        </LinearLayout>
+        <View android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="9.0sp" android:textColor="@color/blueGrey" android:id="@id/alerts_balance_mail_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_side_half" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:text="@string/alerts_mail_description" />
+</LinearLayout>

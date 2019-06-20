@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/export_send_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:src="@drawable/ic_action_done_ripple" android:layout_marginEnd="@dimen/list_padding_side_half" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/export_loading_bar" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:indeterminate="true" android:layout_marginEnd="@dimen/list_padding_side_half" android:indeterminateTint="@color/white_transparent" android:indeterminateTintMode="src_in" />
+</LinearLayout>

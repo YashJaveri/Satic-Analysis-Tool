@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:background="@color/bankin" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:elevation="3.0dip" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip">
+        <android.support.design.widget.TabLayout android:id="@id/category_tab_layout" android:background="@color/bankin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="0.0dip" app:elevation="0.0dip" app:tabGravity="fill" app:tabIndicatorColor="@color/white" app:tabIndicatorHeight="4.0dip" app:tabPaddingBottom="0.0dip" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" app:tabPaddingTop="0.0dip" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.view.ViewPager android:id="@id/category_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

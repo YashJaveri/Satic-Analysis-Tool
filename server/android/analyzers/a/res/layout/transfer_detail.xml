@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/backgroundDark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/transfer_detail_loader" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/transfer_detail_header_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentTop="true" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip">
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/transfer_detail_status_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginEnd="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/transfer_detail_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/transfer_detail_status_icon">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_primary_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+            <TextView android:textSize="@dimen/standard_text_size" android:textColor="@color/white" android:id="@id/transfer_detail_secondary_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:id="@id/transfer_detail_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/transfer_detail_exit" android:layout_below="@id/transfer_detail_header_container">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_sender_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/transfer_detail_sender_title" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_sender_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_sender_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+            <View android:background="@color/greyBlue" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_receiver_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/transfer_detail_receiver_title" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_receiver_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_receiver_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+            <View android:background="@color/greyBlue" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_label_title" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="2.0dip" android:text="@string/transfer_detail_label_title" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_label_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/transfer_detail_date_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <View android:background="@color/greyBlue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_date_title" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="2.0dip" android:text="@string/transfer_detail_date_title" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/transfer_detail_date_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+            </LinearLayout>
+            <View android:background="@color/greyBlue" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/greyBlueFive" android:id="@id/transfer_detail_reference" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="18.0dip" />
+            <View android:id="@id/transfer_detail_reference_separator" android:background="@color/greyBlue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/transfer_button_notify" android:background="@drawable/ripple_dark_transfer_with_border" android:padding="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="21.0dip" android:layout_height="19.0dip" android:src="@drawable/transfer_done_button_notify" android:contentDescription="@string/transfer_done_button_notify" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/transfer_button_notify_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/transfer_done_button_notify" android:layout_marginStart="15.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/transfer_detail_exit" android:background="@drawable/transfer_detail_close" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/transfer_detail_cross" android:background="@drawable/ripple_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/icon_close" />
+    </RelativeLayout>
+</RelativeLayout>

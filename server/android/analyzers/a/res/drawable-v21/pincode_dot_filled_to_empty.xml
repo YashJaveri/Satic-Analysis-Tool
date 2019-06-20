@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/pincode_dot_filled"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="groupRotation" android:animation="@anim/pincode_dot_rotation_filled_to_empty" />
+    <target android:name="path" android:animation="@anim/pincode_dot_path_morph_filled_to_empty" />
+</animated-vector>
