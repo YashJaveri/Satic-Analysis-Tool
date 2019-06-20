@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_transaction" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="125.0dip" android:src="@drawable/no_transaction" android:contentDescription="@string/no_transactions" />
-    <TextView android:textSize="17.0sp" android:textColor="@color/charcoalGrey" android:layout_gravity="center" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/no_transactions" />
-    <TextView android:textSize="11.0sp" android:textColor="@color/gunMetal" android:layout_gravity="center" android:id="@id/textTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" android:text="@string/at_the_moment" />
-</LinearLayout>

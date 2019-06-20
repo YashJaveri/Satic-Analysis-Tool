@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <objectAnimator android:duration="100" android:valueFrom="@string/path_pincode_line_straight" android:valueTo="@string/path_pincode_line_down" android:valueType="pathType" android:propertyName="pathData" />
-    <objectAnimator android:duration="100" android:startOffset="100" android:valueFrom="@string/path_pincode_line_down" android:valueTo="@string/path_pincode_line_up" android:valueType="pathType" android:propertyName="pathData" />
-    <objectAnimator android:interpolator="@android:interpolator/bounce" android:duration="200" android:startOffset="200" android:valueFrom="@string/path_pincode_line_up" android:valueTo="@string/path_pincode_line_straight" android:valueType="pathType" android:propertyName="pathData" />
-</set>

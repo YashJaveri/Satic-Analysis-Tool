@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="10.0dip" android:width="60.0dip" android:viewportWidth="60.0" android:viewportHeight="10.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:name="rotationGroup">
-        <path android:name="line_pincode" android:fillColor="#ff6cda96" android:pathData="@string/path_pincode_line_straight" android:strokeLineCap="round" />
-    </group>
-</vector>

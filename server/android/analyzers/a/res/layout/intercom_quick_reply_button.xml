@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" style="@style/intercom_quick_reply_button"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:paddingStart="@dimen/cardFeed_marginHorizontal" android:paddingEnd="@dimen/cardFeed_marginHorizontal"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="@dimen/cardFeed_section_date_textSize" android:textColor="@color/cardFeed_sectionDate" android:id="@id/cardFeed_section_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:textSize="@dimen/cardFeed_section_day_textSize" android:textColor="@color/black" android:id="@id/cardFeed_section_day" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/cardFeed_section_date" />
-</android.support.constraint.ConstraintLayout>

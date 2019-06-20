@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:text="@string/pref_alerts_balance_description" style="@style/Bankin.Widget.Preferences.Subtitle" />
-    <include layout="@layout/include_pref_notification_methods" />
-</LinearLayout>

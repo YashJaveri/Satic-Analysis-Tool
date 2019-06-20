@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector android:drawable="@drawable/transfer_icon_fab_vector"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <target android:name="btn_fab_transfer" android:animation="@anim/path_morph_transfer_fab_to_next" />
-</animated-vector>

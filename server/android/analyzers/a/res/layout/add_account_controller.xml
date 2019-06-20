@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center" android:id="@id/add_account_controller_container" android:background="@drawable/white_button" android:paddingLeft="17.0dip" android:paddingTop="17.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:paddingStart="17.0dip" android:paddingEnd="20.0dip">
-        <TextView android:textSize="15.0sp" android:textColor="@color/blueGrey" android:gravity="center" android:id="@id/add_account_controller_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="15.0dip" android:text="@string/icon_add" android:layout_marginEnd="15.0dip" />
-        <TextView android:textColor="@color/blueGrey" android:gravity="center" android:id="@id/add_account_controller_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/button_text_size_style" />
-    </LinearLayout>
-    <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
-</LinearLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/share_dialog_root" android:background="@color/white" android:padding="@dimen/list_padding_side" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/dialog_cross_exit" />
-    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_padding_side_three_quarter_inverse" android:text="@string/share_today" style="@style/text_dialog.title" />
-    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dialog_present" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin_top" android:text="@string/share_special_offer" android:drawableBottom="@drawable/present" style="@style/text_dialog.description" />
-    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dialog_offer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin_top" android:text="@string/share_fb_sponsorship_code_bplus" style="@style/text_dialog.description" />
-    <include layout="@layout/dialog_btn" />
-</LinearLayout>

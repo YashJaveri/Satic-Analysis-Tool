@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:gravity="center" android:id="@id/delete_reason_item_check_container" android:layout_width="34.0dip" android:layout_height="34.0dip">
-        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/delete_reason_item_check" android:background="@drawable/delete_check_button_default" android:layout_width="22.0dip" android:layout_height="22.0dip" />
-    </RelativeLayout>
-    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/delete_reason_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" />
-</LinearLayout>

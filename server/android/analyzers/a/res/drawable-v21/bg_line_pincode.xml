@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector android:drawable="@drawable/vector_line_pincode"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <target android:name="line_pincode" android:animation="@anim/path_morph_line" />
-</animated-vector>

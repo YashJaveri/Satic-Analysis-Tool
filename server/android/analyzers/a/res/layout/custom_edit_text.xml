@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.bankeen.tools.ui.CustomCatEditText android:ellipsize="end" android:id="@id/edittext_category_name" android:background="@drawable/bg_textfield" android:paddingLeft="@dimen/list_custom_cat_padding" android:paddingRight="@dimen/list_custom_cat_padding" android:layout_width="fill_parent" android:layout_height="@dimen/list_custom_cat_height" android:singleLine="true" android:inputType="textVisiblePassword" android:imeOptions="flagNoExtractUi" style="@style/text_editText" />
-</merge>

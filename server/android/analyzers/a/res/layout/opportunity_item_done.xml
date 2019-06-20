@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/opp_card_done_icon" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="24.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/opp_card_done_text" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/opp_card_subtitle" app:srcCompat="@drawable/ic_opportunity_hand" />
-    <com.bankeen.tools.ui.BkEmojiTextView android:textSize="17.0sp" android:textColor="@color/opportunity_text_done" android:ellipsize="end" android:id="@id/opp_card_done_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/gotham_bold" android:layout_marginEnd="24.0dip" app:layout_constraintBottom_toBottomOf="@id/opp_card_done_icon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/opp_card_done_icon" app:layout_constraintTop_toTopOf="@id/opp_card_done_icon" />
-</merge>

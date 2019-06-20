@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:topLeftRadius="@dimen/intercom_bubble_rounding" android:topRightRadius="@dimen/intercom_bubble_concatenation_rounding" android:bottomLeftRadius="@dimen/intercom_bubble_rounding" android:bottomRightRadius="@dimen/intercom_bubble_concatenation_rounding" />
-    <solid android:color="@color/intercom_admin_block_background" />
-</shape>

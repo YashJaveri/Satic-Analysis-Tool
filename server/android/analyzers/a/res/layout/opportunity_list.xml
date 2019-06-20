@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/globalContent" android:background="@color/white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:elevation="0.0dip" app:layout_constraintTop_toTopOf="parent">
-        <android.support.v7.widget.Toolbar android:theme="@style/Bankin.Widget.Toolbar.White" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
-    </android.support.design.widget.AppBarLayout>
-    <android.support.v7.widget.RecyclerView android:id="@id/rv" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="48.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/appbar" />
-    <com.bankeen.tools.ui.OverflowPagerIndicator android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/rv" app:layout_constraintStart_toStartOf="@id/rv" />
-</android.support.constraint.ConstraintLayout>

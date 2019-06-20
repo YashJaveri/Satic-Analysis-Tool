@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/grey_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:textColor="@color/grey_contact" android:gravity="top" android:id="@id/contact_form" android:background="@drawable/contact_textarea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:hint="@string/contact_hint" android:inputType="textMultiLine|textNoSuggestions" style="@style/standard_text_size">
-        <requestFocus />
-    </EditText>
-</LinearLayout>

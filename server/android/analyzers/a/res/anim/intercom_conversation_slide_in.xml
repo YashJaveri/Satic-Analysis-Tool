@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set android:duration="@integer/intercom_conversation_slide_in_time" android:startOffset="@integer/intercom_conversation_slide_in_delay"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <translate android:interpolator="@anim/intercom_accelerate_interpolator" android:fromXDelta="4.999995%p" android:toXDelta="0.0" />
-    <alpha android:interpolator="@anim/intercom_accelerate_interpolator" android:fromAlpha="0.0" android:toAlpha="1.0" />
-</set>
