@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/data_field_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/opp_card_data_icon" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" app:srcCompat="@drawable/ic_opportunity_bill" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+        <TextView android:textSize="24.0sp" android:ellipsize="end" android:id="@id/opp_card_data_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="8.0sp" android:fontFamily="@font/gotham_bold" />
+        <com.bankeen.tools.ui.BkEmojiTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/opp_card_data_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

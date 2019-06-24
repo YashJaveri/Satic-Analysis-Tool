@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Bankin.CardFeed.WithForeground">
+        <LinearLayout android:orientation="vertical" android:id="@id/card_data_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/card_data_progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="160.0dip">
+                    <include android:gravity="center" layout="@layout/progressbar_item" />
+                </FrameLayout>
+                <ImageView android:id="@id/card_data_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxHeight="220.0dip" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/card_data_lottie" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_centerHorizontal="true" app:lottie_autoPlay="true" app:lottie_loop="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+                <com.bankeen.tools.ui.BkEmojiTextView android:textSize="@dimen/coach_actions_theme_font_size_title" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_data_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                <com.bankeen.tools.ui.BkEmojiTextView android:textSize="@dimen/coach_actions_theme_font_size_subtitle" android:textColor="@color/white" android:id="@id/card_data_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <android.support.constraint.ConstraintLayout android:id="@id/card_data_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                    <TextView android:textSize="@dimen/card_data_title_textSize" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_data_left_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toTopOf="@id/card_data_left_value" app:layout_constraintEnd_toStartOf="@id/card_data_right_title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <TextView android:textSize="@dimen/card_data_title_textSize" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_data_right_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toTopOf="@id/card_data_right_value" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/card_data_left_title" app:layout_constraintTop_toTopOf="parent" />
+                    <TextView android:textSize="@dimen/card_data_value_textSize" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_data_left_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/card_data_left_title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/card_data_left_title" />
+                    <TextView android:textSize="@dimen/card_data_value_textSize" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_data_right_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/card_data_right_title" app:layout_constraintTop_toBottomOf="@id/card_data_right_title" />
+                </android.support.constraint.ConstraintLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/card_data_cta" android:background="@drawable/coach_action_cta_clic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:baselineAligned="false">
+                    <com.bankeen.tools.ui.BkEmojiTextView android:textSize="@dimen/coach_actions_theme_font_size_button_label" android:id="@id/card_data_cta_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <TextView android:textSize="@dimen/coach_actions_theme_font_size_button_arrow" android:id="@id/card_data_cta_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_icon_next_arrow" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

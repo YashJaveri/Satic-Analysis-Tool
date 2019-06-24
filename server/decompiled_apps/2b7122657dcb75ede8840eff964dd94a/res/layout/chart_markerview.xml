@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chart_marker_container" android:background="@drawable/chart_balance_marker_green" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true">
+        <TextView android:textSize="11.0dip" android:textColor="@color/charcoalGrey" android:id="@id/chart_marker_earning_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chart_balance_earning" android:singleLine="true" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/charcoalGrey" android:id="@id/chart_marker_earning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true">
+        <TextView android:textSize="11.0dip" android:textColor="@color/charcoalGrey" android:id="@id/chart_marker_spending_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chart_balance_spending" android:singleLine="true" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/charcoalGrey" android:id="@id/chart_marker_spending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true">
+        <TextView android:textSize="11.0dip" android:textColor="@color/charcoalGrey" android:id="@id/chart_marker_balance_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chart_balance_total" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/charcoalGrey" android:id="@id/chart_marker_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

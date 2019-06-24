@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/globalContent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:id="@id/footer_container" android:background="#fff5f8fc" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/security_footer" android:background="#fff5f7f9" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="18.0dip" android:src="@drawable/add_account_secure" android:contentDescription="@string/add_account_security" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/greyBlue" android:id="@id/adding_account_security" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:text="@string/add_account_security" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/lightblue_click" android:id="@id/adding_account_know_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_account_know_more" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/footer_container" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="19.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/adding_lock_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/icon_lock" />
+                <TextView android:textSize="22.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/adding_account_bank_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+                <TextView android:textSize="22.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/adding_account_step_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/add_account_connection" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/gunMetal" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/adding_account_connection" />
+                <RelativeLayout android:gravity="center" android:id="@id/adding_account_container" android:layout_width="fill_parent" android:layout_height="255.0dip" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@id/adding_account_ripple_1" android:visibility="invisible" android:layout_width="255.0dip" android:layout_height="255.0dip" android:src="@drawable/adding_account_ripple_1" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/adding_account_ripple_2" android:visibility="invisible" android:layout_width="255.0dip" android:layout_height="255.0dip" android:src="@drawable/adding_account_ripple_2" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/adding_account" android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/adding_account" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/adding_account_arrow" android:layout_width="65.0dip" android:layout_height="wrap_content" android:src="@drawable/btn_adding" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/adding_account_status" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/adding_account_status_button" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true" android:textAllCaps="false" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adding_account_status_button">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/adding_account_status_icon" android:layout_width="240.0dip" android:layout_height="240.0dip" android:layout_marginBottom="40.0dip" android:scaleType="centerInside" />
+                <TextView android:textSize="22.0sp" android:textColor="@color/charcoalGrey" android:gravity="center_horizontal" android:id="@id/adding_account_status_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/charcoalGrey" android:gravity="center_horizontal" android:id="@id/adding_account_status_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/adding_account_status_button_center" android:background="@drawable/adding_account_white_button" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:textAllCaps="false" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

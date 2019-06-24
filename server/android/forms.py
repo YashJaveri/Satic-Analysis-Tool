@@ -1,4 +1,4 @@
 from django import forms
 
 class APKFileForm(forms.Form):
-    file = forms.FileField()
+    apk_file = forms.FileField()

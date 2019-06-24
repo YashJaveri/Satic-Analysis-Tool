@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/budget_list_item_container" android:background="@drawable/clic_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="10.0sp" android:textColor="@color/gunMetal" android:ellipsize="end" android:gravity="center" android:id="@id/budget_list_item_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:textAllCaps="true" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/budget_list_item_chart_container" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginBottom="15.0dip" android:transitionName="@string/transition_budget_chart">
+            <com.github.mikephil.charting.charts.PieChart android:id="@id/budget_list_item_chart" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/budget_list_item_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+                <TextView android:textColor="@color/gunMetal" android:gravity="center" android:id="@id/budget_list_item_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/solde" style="@style/standard_text_size" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:gravity="center" android:id="@id/budget_list_item_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/budget_list_item_settings" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:paddingStart="20.0dip" android:paddingEnd="10.0dip" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/budget_settings" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/content" android:background="@color/background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/app_bar" />
+    <android.support.v7.widget.RecyclerView android:id="@id/portfolio_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+    <ScrollView android:id="@id/portfolio_list_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.github.mikephil.charting.charts.LineChart android:id="@id/share_saving_account_header_empty_chart" android:background="@color/darkGrey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="250.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="125.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/no_transaction" />
+                <TextView android:textColor="@color/charcoalGrey" android:layout_gravity="center" android:id="@id/share_saving_account_header_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="50.0dip" android:text="@string/share_saving_account_empty" style="@style/standard_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coach_actions_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <RelativeLayout android:gravity="center" android:id="@id/coach_actions_empty_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:id="@id/coach_actions_empty_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/coach_actions_empty" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/coach_actions_error_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:id="@id/coach_actions_error_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/coach_actions_error" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/coach_actions_loading_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/coach_actions_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,2 +1,1 @@
-FLASK_APP=app.py flask run
-
+python manage.py runserver

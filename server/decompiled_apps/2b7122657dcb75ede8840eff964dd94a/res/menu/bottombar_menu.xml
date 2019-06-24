@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_account_24dp" android:id="@id/accounts" android:title="@string/bottom_bar_accounts" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_category_24dp" android:id="@id/categories" android:title="@string/bottom_bar_categories" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_transfers_24dp" android:id="@id/transfers" android:title="@string/bottom_bar_transfers" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_activity_24dp" android:id="@id/feed" android:title="@string/bottom_bar_coach" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_budget_24dp" android:id="@id/budgets" android:title="@string/bottom_bar_budget" app:showAsAction="ifRoom" />
+</menu>

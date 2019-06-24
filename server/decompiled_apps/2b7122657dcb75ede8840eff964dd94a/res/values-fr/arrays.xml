@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="months">
+        <item>Janvier</item>
+        <item>Fevrier</item>
+        <item>Mars</item>
+        <item>Avril</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Septembre</item>
+        <item>Octobre</item>
+        <item>Novembre</item>
+        <item>Décembre</item>
+    </string-array>
+    <string-array name="months_short">
+        <item>Jan.</item>
+        <item>Fev.</item>
+        <item>Mars</item>
+        <item>Avr.</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juil.</item>
+        <item>Août</item>
+        <item>Sept.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Déc.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@mipmap/ic_shortcut_search" android:enabled="true">
+        <intent android:targetPackage="com.bankeen" android:action="android.intent.action.VIEW" android:data="bankin://search" android:targetClass="com.bankeen.common.activities.core.LauncherActivity_" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@mipmap/ic_shortcut_activities" android:enabled="true">
+        <intent android:targetPackage="com.bankeen" android:action="android.intent.action.VIEW" android:data="bankin://feed" android:targetClass="com.bankeen.common.activities.core.LauncherActivity_" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@mipmap/ic_shortcut_transfer" android:enabled="true">
+        <intent android:targetPackage="com.bankeen" android:action="android.intent.action.VIEW" android:data="bankin://transfers" android:targetClass="com.bankeen.common.activities.core.LauncherActivity_" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

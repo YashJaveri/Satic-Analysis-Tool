@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/backgroundDark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/transfer_done_container_global" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="70.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/transfer_done_close" style="@style/transfer_amount_layout.btn_close" />
+            <RelativeLayout android:id="@id/transfer_done_anim_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/transfer_done_circle_blue" android:visibility="invisible" android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/transfer_done_circle_blue" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/transfer_done_circle_dark" android:layout_width="95.0dip" android:layout_height="95.0dip" android:src="@drawable/transfer_done_circle_dark" android:layout_centerInParent="true" />
+                <ImageView android:layout_gravity="center" android:id="@id/transfer_done_circle_loader" android:visibility="invisible" android:layout_width="250.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/transfer_done_result_icon" android:layout_width="240.0dip" android:layout_height="240.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:layout_below="@id/transfer_done_anim_container">
+                <TextView android:textSize="21.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/transfer_done_result_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/transfer_done_result_title_pending" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/transfer_done_result_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/transfer_done_result_desc_pending" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/transfer_done_result_reason" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" />
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/transfer_done_button_notify" android:background="@drawable/green_transfer_button_radius" android:padding="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/transfer_done_button_notify_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_paper_plane" android:layout_marginEnd="10.0dip" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/transfer_done_button_notify_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_done_button_notify" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/transfer_done_button_finish_success" android:background="@drawable/ripple_dark_transfer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="70.0dip" android:text="@string/transfer_done_button_new_transfer" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/transfer_done_button_finish_error" android:background="@drawable/ripple_dark_transfer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="70.0dip" android:text="@string/transfer_done_button_finish_error" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

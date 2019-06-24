@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Bankin.CardFeed.WithForeground">
+        <LinearLayout android:orientation="vertical" android:id="@id/card_action_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/card_action_progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="160.0dip">
+                    <include android:gravity="center" layout="@layout/progressbar_item" />
+                </FrameLayout>
+                <ImageView android:id="@id/card_action_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxHeight="220.0dip" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/card_action_lottie" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_centerHorizontal="true" app:lottie_autoPlay="true" app:lottie_loop="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+                <com.bankeen.tools.ui.BkEmojiTextView android:textSize="@dimen/coach_actions_theme_font_size_title" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_action_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                <com.bankeen.tools.ui.BkEmojiTextView android:textSize="@dimen/coach_actions_theme_font_size_subtitle" android:textColor="@color/white" android:id="@id/card_action_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:baselineAligned="false">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_action_done" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/coach_actions_theme_font_size_done_icon" android:textColor="@color/white" android:id="@id/card_action_done_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_icon_validate" android:layout_marginEnd="8.0dip" />
+                        <TextView android:textSize="@dimen/coach_actions_theme_font_size_done_label" android:ellipsize="end" android:id="@id/card_action_done_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_action_done" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_action_validation" android:background="@drawable/coach_action_validation" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.bankeen.tools.ui.BkEmojiTextView android:textSize="@dimen/coach_actions_theme_font_size_button_label" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_action_validation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_action_cta" android:background="@drawable/coach_action_cta_clic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+                        <com.bankeen.tools.ui.BkEmojiTextView android:textSize="@dimen/coach_actions_theme_font_size_button_label" android:id="@id/card_action_cta_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                        <TextView android:textSize="@dimen/coach_actions_theme_font_size_button_arrow" android:id="@id/card_action_cta_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_icon_next_arrow" android:layout_marginStart="4.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/card_action_animation" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:lottie_fileName="lottie/coachActionSuccess.json" app:lottie_imageAssetsFolder="lottie/images" app:lottie_scale="0.5" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

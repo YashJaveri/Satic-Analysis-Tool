@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/country_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <ImageView android:id="@id/country_flag" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/lightGreyBlue" android:gravity="center_vertical" android:id="@id/country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/item_container" android:background="@drawable/clic_view" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height">
+        <include layout="@layout/list_item" />
+    </LinearLayout>
+</LinearLayout>

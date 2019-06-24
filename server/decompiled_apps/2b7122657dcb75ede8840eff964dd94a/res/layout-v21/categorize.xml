@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <requestFocus />
+    <RelativeLayout android:id="@id/categorizeHeader" android:background="@color/lightBlueGreyPlus" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+        <View android:id="@id/categorizeHeaderReveal" android:background="@color/lightBlueGreyPlus" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/categorize_back" android:background="@android:color/transparent" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textColor="@color/white" android:id="@id/categorizeLabel" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_categories" android:layout_centerInParent="true" style="@style/list_item_title" />
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:id="@id/categorizeIcon" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/categorize_close" android:background="@drawable/ripple_white" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/icon_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/categorizeSearchContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/categorizeHeader">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <EditText android:textColorHint="@color/lightGreyBlue" android:gravity="center" android:id="@id/categorizeSearch" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/categorize_search" style="@style/list_item_title" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/lightGreyBlue" android:gravity="center" android:id="@id/categorizeSearchClose" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/icon_close" android:layout_alignParentRight="true" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/paleGrey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/categorizeList" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_below="@id/categorizeSearchContainer" />
+    <RelativeLayout android:id="@id/categorizeLoader" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:indeterminateTint="@color/bankin" android:indeterminateTintMode="src_in" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_item_line_top" />
+    <TextView android:gravity="center" android:id="@id/funnelRowText" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <include layout="@layout/list_shadow" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView android:id="@id/card_transaction_alert_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Bankin.CardFeed">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/feed_card_header" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider" android:showDividers="middle">
+                <LinearLayout android:orientation="vertical" android:id="@id/card_transaction_alert_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider_card_feed_item_transaction" android:showDividers="middle" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/slate" android:gravity="center_vertical" android:id="@id/card_transaction_alert_action" android:background="@drawable/clic_view" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/card_transaction_alert_action" android:textAllCaps="true" android:paddingStart="@dimen/cardFeed_paddingHorizontal" android:paddingEnd="@dimen/cardFeed_paddingHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

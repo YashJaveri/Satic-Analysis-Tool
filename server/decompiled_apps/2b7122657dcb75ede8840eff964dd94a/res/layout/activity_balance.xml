@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container_balance" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/toolbar" />
+            <com.bankeen.data.headerdate.HeaderDateView android:id="@id/headerDateView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ScrollView android:id="@id/scrollview_balance" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/header_solde_account_container" android:background="@color/white" android:paddingTop="@dimen/common_margin_top_big" android:paddingBottom="@dimen/common_margin_top_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="25.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:id="@id/header_solde_account_container_solde" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/blueGrey" android:gravity="center" android:id="@id/header_solde_account_container_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/amount_saved" android:textAllCaps="true" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/header_solde_chart_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/saving_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/earning_container" android:background="@drawable/clic_view" android:paddingLeft="@dimen/list_padding_side_three_quarter" android:paddingRight="@dimen/list_padding_side_three_quarter" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_big">
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/earning_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:text="@string/icon_income" android:layout_marginEnd="@dimen/list_padding_side_half" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:ellipsize="end" android:id="@id/earning_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/earnings" style="@style/list_item_title.details_black" />
+                                <TextView android:ellipsize="end" android:id="@id/earning_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/list_item_details" />
+                            </LinearLayout>
+                            <TextView android:id="@id/earning_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/list_item_amount.black" />
+                        </LinearLayout>
+                        <include layout="@layout/list_item_line_top" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/spending_container" android:background="@drawable/clic_view" android:paddingLeft="@dimen/list_padding_side_three_quarter" android:paddingRight="@dimen/list_padding_side_three_quarter" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_big">
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/spending_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/list_padding_side_half" android:text="@string/icon_expense" android:layout_marginEnd="@dimen/list_padding_side_half" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:ellipsize="end" android:id="@id/spending_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spendings" style="@style/list_item_title.details_black" />
+                                <TextView android:ellipsize="end" android:id="@id/spending_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/list_item_details" />
+                            </LinearLayout>
+                            <TextView android:id="@id/spending_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/list_item_amount.black" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <include layout="@layout/header_nav_custom" />
+    </RelativeLayout>
+</FrameLayout>

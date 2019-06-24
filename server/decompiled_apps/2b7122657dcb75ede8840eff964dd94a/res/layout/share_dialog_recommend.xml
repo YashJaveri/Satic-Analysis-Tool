@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/remind_to_share" android:background="@android:color/transparent" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/remind_to_share_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/remind_to_share_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/remind_to_share_icon" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:layout_gravity="center" android:id="@id/remind_to_share_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/remind_to_share_title" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/charcoalGrey" android:gravity="center" android:layout_gravity="center" android:id="@id/remind_to_share_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/remind_to_share_subtitle" />
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/remind_to_share_yes" android:background="@drawable/ripple_remind_to_share_button" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/remind_to_share_button" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/remind_to_share_close" android:background="@drawable/remind_to_share_close_button" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/icon_close" />
+    </LinearLayout>
+</LinearLayout>

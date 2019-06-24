@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="ga_autoActivityTracking">false</bool>
+    <bool name="ga_debug">false</bool>
+    <bool name="ga_reportUncaughtExceptions">false</bool>
+    <bool name="intercom_composer_fits_system_windows">false</bool>
+    <bool name="intercom_composer_keyboard_takes_full_screen_in_landscape">true</bool>
+    <bool name="intercom_is_two_pane">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="opportunity_portrait_only">true</bool>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/wallpaper_image" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/intercom_wallpaper_image_style" />
+    <RelativeLayout android:id="@id/toolbar_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="16.0dip">
+        <Space android:id="@id/top_padding" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/intercom_toolbar_logo" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" android:scaleType="fitStart" android:adjustViewBounds="true" android:layout_below="@id/top_padding" android:layout_alignParentLeft="true" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="32.0sp" android:textColor="@color/intercom_white" android:ellipsize="end" android:id="@id/intercom_toolbar_greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@id/intercom_toolbar_logo" app:autoSizeMaxTextSize="32.0sp" app:autoSizeMinTextSize="20.0sp" app:autoSizeStepGranularity="2.0sp" app:autoSizeTextType="uniform" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/intercom_white" android:id="@id/intercom_toolbar_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:includeFontPadding="false" android:layout_below="@id/intercom_toolbar_greeting" android:alpha="0.7" />
+        <Space android:id="@id/bottom_padding" android:layout_width="wrap_content" android:layout_height="@dimen/intercom_home_toolbar_bottom_padding" android:layout_below="@id/intercom_toolbar_intro" />
+    </RelativeLayout>
+</FrameLayout>
