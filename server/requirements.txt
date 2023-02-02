@@ -9,4 +9,4 @@ pyjadx==0.1.7
 pytz==2019.1
 six==1.12.0
 sqlparse==0.3.0
-Werkzeug==0.15.4
+Werkzeug==0.15.5
